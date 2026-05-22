@@ -1,0 +1,45 @@
+@media print {
+  body {
+    background: #fff;
+    color: #000;
+  }
+  
+  .site-header,
+  .site-footer,
+  .mobile-menu-btn,
+  .skip-link {
+    display: none !important;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+  }
+  
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+  }
+  
+  .card, .notice, blockquote {
+    border: 1px solid #ccc;
+    background: #fff;
+    box-shadow: none;
+    page-break-inside: avoid;
+  }
+  
+  h1, h2, h3 {
+    page-break-after: avoid;
+    color: #000;
+  }
+  
+  img, svg {
+    page-break-inside: avoid;
+  }
+}
