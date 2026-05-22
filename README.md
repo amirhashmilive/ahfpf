@@ -1,23 +1,16 @@
-# AHFPF — Amir Hashmi Five Pillars Framework
+# React + Vite
 
-A universal analytical and implementation framework explaining how communication determines whether initiatives become meaningful societal impact.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## About the Framework
-AHFPF proposes that societal impact is not determined solely by initiative quality, but by whether value successfully travels between Entity, Execution, Initiative, and Impact through Communication as infrastructure.
+Currently, two official plugins are available:
 
-### The Five Pillars
-1. **Entity (P1)**: The initiating actor (individual, organization, company, government)
-2. **Execution (P2)**: The implementing body (partner, agency, team, volunteers)
-3. **Initiative (P3)**: The action, program, project, or intervention
-4. **Impact (P4)**: Measurable change in quality of life, well-being, or capability
-5. **Communication (P5)**: The infrastructural connective layer — THE BRIDGE
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## Transparency Ledger
-This repository serves as a Transparency Ledger, ensuring public traceability of framework evolution, methodological revisions, structural assumptions, and interpretive updates.
+## React Compiler
 
-## Technical Details
-This website is built as a static site using HTML5, CSS3, and Vanilla JS. It requires no build step and is designed to be easily hosted on GitHub Pages. It follows a mobile-first approach, WCAG 2.1 AA accessibility guidelines, and is offline-ready.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## License
-- Framework Documentation: CC BY-SA 4.0
-- Codebase: MIT License
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
