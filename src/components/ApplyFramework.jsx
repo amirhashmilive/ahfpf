@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const matrixData = {
@@ -12,11 +12,12 @@ export default function ApplyFramework() {
   const [activeDomain, setActiveDomain] = useState('csr');
   
   return (
-    <section className="section-100vh" style={{ backgroundColor: '#f8fafc' }}>
+    <section id="apply" className="section-100vh" style={{ backgroundColor: '#f8fafc' }}>
       <div className="max-w-4xl text-center">
         <motion.h2 
           initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.5 }} viewport={{ once: false }}
-          style={{ fontSize: '3rem', marginBottom: '2rem' }}
+          className="title-section"
+          style={{ marginBottom: '2rem' }}
         >
           Apply the Framework
         </motion.h2>
@@ -62,10 +63,10 @@ export default function ApplyFramework() {
                 { id: 'p3', label: 'P3: Initiative', color: 'var(--color-initiative)' },
                 { id: 'p4', label: 'P4: Impact', color: 'var(--color-impact)' },
                 { id: 'p5', label: 'P5: Communication', color: 'var(--color-comm)' }
-              ].map((item, idx) => (
-                <div key={item.id} style={{ display: 'flex', borderBottom: idx < 4 ? '1px solid var(--color-border)' : 'none', padding: '1rem 0' }}>
-                  <div style={{ width: '150px', fontWeight: 600, color: item.color, flexShrink: 0 }}>{item.label}</div>
-                  <div style={{ fontWeight: item.id === 'p5' ? 600 : 400 }}>{matrixData[activeDomain][item.id]}</div>
+              ].map((item) => (
+                <div key={item.id} className="matrix-row">
+                   <div className="matrix-label" style={{ color: item.color }}>{item.label}</div>
+                   <div className="matrix-value" style={{ fontWeight: item.id === 'p5' ? 600 : 400 }}>{matrixData[activeDomain][item.id]}</div>
                 </div>
               ))}
             </motion.div>

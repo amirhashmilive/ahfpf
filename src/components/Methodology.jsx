@@ -1,9 +1,8 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 
 export default function Methodology() {
   return (
-    <section className="section-100vh" style={{ backgroundColor: '#ffffff', justifyContent: 'space-between' }}>
+    <section id="methodology" className="section-100vh" style={{ backgroundColor: '#ffffff', justifyContent: 'space-between' }}>
       <div className="max-w-4xl" style={{ marginTop: 'auto' }}>
         <motion.div
           initial={{ opacity: 0 }}
@@ -11,8 +10,8 @@ export default function Methodology() {
           transition={{ duration: 1 }}
           viewport={{ once: false }}
         >
-          <h2 style={{ fontSize: '3rem', marginBottom: '1rem', textAlign: 'center' }}>Methodology & Transparency</h2>
-          <p style={{ fontSize: '1.25rem', color: 'var(--color-text-light)', textAlign: 'center', marginBottom: '3rem' }}>
+          <h2 className="title-section" style={{ textAlign: 'center' }}>Methodology & Transparency</h2>
+          <p className="text-body-large" style={{ textAlign: 'center', marginBottom: '3rem' }}>
             Built on an adaptive systems approach. Non-ideological, structurally aligned.
           </p>
           

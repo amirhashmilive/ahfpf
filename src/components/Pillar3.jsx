@@ -1,17 +1,17 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Target } from 'lucide-react';
 
 export default function Pillar3() {
   return (
-    <section className="section-100vh" style={{ backgroundColor: '#ffffff' }}>
+    <section id="p3" className="section-100vh" style={{ backgroundColor: '#ffffff' }}>
       <div className="max-w-4xl text-center">
         <motion.div
           initial={{ height: 0 }}
           whileInView={{ height: '15vh' }}
           transition={{ duration: 0.5 }}
           viewport={{ once: false }}
-          style={{ width: '4px', backgroundColor: 'var(--color-execution)', margin: '0 auto 2rem auto', borderRadius: '2px' }}
+          style={{ backgroundColor: 'var(--color-execution)', margin: '0 auto 2rem auto' }}
+          className="connection-line"
         />
 
         <motion.div
@@ -34,8 +34,8 @@ export default function Pillar3() {
           viewport={{ once: false, amount: 0.5 }}
         >
           <span className="badge" style={{ backgroundColor: 'rgba(236, 72, 153, 0.1)', color: 'var(--color-initiative)' }}>P3 Initiative</span>
-          <h2 style={{ fontSize: '3rem', marginBottom: '1rem' }}>The Intervention</h2>
-          <p style={{ fontSize: '1.25rem', color: 'var(--color-text-light)' }}>
+          <h2 className="title-section">The Intervention</h2>
+          <p className="text-body-large">
             The concrete activity being performed—the service, the product, the policy, or the campaign. The direct action taken to solve the problem.
           </p>
         </motion.div>
@@ -45,7 +45,8 @@ export default function Pillar3() {
           whileInView={{ height: '15vh' }}
           transition={{ duration: 1, delay: 0.6 }}
           viewport={{ once: false }}
-          style={{ width: '4px', backgroundColor: 'var(--color-initiative)', margin: '3rem auto 0 auto', borderRadius: '2px' }}
+          style={{ backgroundColor: 'var(--color-initiative)', margin: '3rem auto 0 auto' }}
+          className="connection-line"
         />
       </div>
     </section>

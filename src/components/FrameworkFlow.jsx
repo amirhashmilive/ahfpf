@@ -1,9 +1,8 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 
 export default function FrameworkFlow() {
   return (
-    <section className="section-100vh" style={{ backgroundColor: '#fffbeb', position: 'relative' }}>
+    <section id="p5" className="section-100vh" style={{ backgroundColor: '#fffbeb', position: 'relative' }}>
       {/* Background connecting lines animation */}
       <svg style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0, opacity: 0.1 }} pointerEvents="none">
         <motion.path 
@@ -30,7 +29,7 @@ export default function FrameworkFlow() {
           viewport={{ once: false, amount: 0.5 }}
         >
           <span className="badge" style={{ backgroundColor: 'var(--color-comm)', color: 'white' }}>P5 The Bridge</span>
-          <h2 style={{ fontSize: '4rem', marginBottom: '1rem', color: 'var(--color-text)' }}>Communication</h2>
+          <h2 className="title-section" style={{ color: 'var(--color-text)' }}>Communication</h2>
         </motion.div>
 
         <motion.div
@@ -40,14 +39,15 @@ export default function FrameworkFlow() {
           viewport={{ once: false, amount: 0.5 }}
         >
           <blockquote style={{ 
-            fontSize: '1.5rem', 
+            fontSize: 'clamp(1.2rem, 4vw, 1.5rem)', 
             fontFamily: 'var(--font-heading)', 
             fontStyle: 'italic',
             borderLeft: '4px solid var(--color-comm)',
             paddingLeft: '1.5rem',
             margin: '2rem auto',
             maxWidth: '600px',
-            color: 'var(--color-text)'
+            color: 'var(--color-text)',
+            lineHeight: 1.4
           }}>
             "Communication determines whether value travels across the framework."
           </blockquote>
@@ -64,12 +64,12 @@ export default function FrameworkFlow() {
           }}
         >
           <motion.div variants={{ hidden: { opacity: 0, x: -20 }, visible: { opacity: 1, x: 0 } }}>
-            <h3 style={{ color: 'var(--color-comm)', fontSize: '1.25rem', marginBottom: '0.5rem' }}>Transmission</h3>
-            <p>P5 enables the flow from Entity → Execution → Initiative → Impact. Without it, value is created but never communicated.</p>
+            <h3 style={{ color: 'var(--color-comm)', fontSize: 'clamp(1.1rem, 3.5vw, 1.25rem)', marginBottom: '0.5rem', fontWeight: 600, fontFamily: 'var(--font-body)' }}>Transmission</h3>
+            <p style={{ fontSize: '0.95rem' }}>P5 enables the flow from Entity → Execution → Initiative → Impact. Without it, value is created but never communicated.</p>
           </motion.div>
           <motion.div variants={{ hidden: { opacity: 0, x: 20 }, visible: { opacity: 1, x: 0 } }}>
-            <h3 style={{ color: 'var(--color-comm)', fontSize: '1.25rem', marginBottom: '0.5rem' }}>Feedback Loops</h3>
-            <p>Impact must be socially visible. P5 returns feedback from Impact back to the Entity, allowing for adaptive redesign.</p>
+            <h3 style={{ color: 'var(--color-comm)', fontSize: 'clamp(1.1rem, 3.5vw, 1.25rem)', marginBottom: '0.5rem', fontWeight: 600, fontFamily: 'var(--font-body)' }}>Feedback Loops</h3>
+            <p style={{ fontSize: '0.95rem' }}>Impact must be socially visible. P5 returns feedback from Impact back to the Entity, allowing for adaptive redesign.</p>
           </motion.div>
         </motion.div>
       </div>

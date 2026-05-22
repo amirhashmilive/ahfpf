@@ -1,4 +1,3 @@
-import React from 'react';
 import Hero from './components/Hero';
 import Pillar1 from './components/Pillar1';
 import Pillar2 from './components/Pillar2';

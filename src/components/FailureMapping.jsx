@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { AlertTriangle, EarOff, EyeOff, LayoutTemplate } from 'lucide-react';
 
@@ -11,7 +10,7 @@ const failures = [
 
 export default function FailureMapping() {
   return (
-    <section className="section-100vh" style={{ backgroundColor: '#ffffff' }}>
+    <section id="failures" className="section-100vh" style={{ backgroundColor: '#ffffff' }}>
       <div className="max-w-4xl">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -19,10 +18,10 @@ export default function FailureMapping() {
           transition={{ duration: 0.6 }}
           viewport={{ once: false }}
           className="text-center"
-          style={{ marginBottom: '4rem' }}
+          style={{ marginBottom: '3rem' }}
         >
-          <h2 style={{ fontSize: '3rem' }}>Where Systems Break</h2>
-          <p style={{ fontSize: '1.25rem', color: 'var(--color-text-light)' }}>Communication debt occurs when implementation advances faster than public understanding.</p>
+          <h2 className="title-section">Where Systems Break</h2>
+          <p className="text-body-large">Communication debt occurs when implementation advances faster than public understanding.</p>
         </motion.div>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem' }}>

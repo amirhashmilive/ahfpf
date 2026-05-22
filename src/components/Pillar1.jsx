@@ -1,10 +1,9 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Building2 } from 'lucide-react';
 
 export default function Pillar1() {
   return (
-    <section className="section-100vh" style={{ backgroundColor: '#ffffff' }}>
+    <section id="p1" className="section-100vh" style={{ backgroundColor: '#ffffff' }}>
       <div className="max-w-4xl text-center">
         <motion.div
           initial={{ opacity: 0, scale: 0.5, y: 50 }}
@@ -24,8 +23,8 @@ export default function Pillar1() {
           viewport={{ once: false, amount: 0.5 }}
         >
           <span className="badge" style={{ backgroundColor: 'rgba(59, 130, 246, 0.1)', color: 'var(--color-entity)' }}>P1 Entity</span>
-          <h2 style={{ fontSize: '3rem', marginBottom: '1rem' }}>The Initiating Actor</h2>
-          <p style={{ fontSize: '1.25rem', color: 'var(--color-text-light)' }}>
+          <h2 className="title-section">The Initiating Actor</h2>
+          <p className="text-body-large">
             The origin point of any initiative. The individual, organization, company, or government that possesses the resources, the mandate, and the vision to enact change.
           </p>
         </motion.div>
@@ -36,7 +35,8 @@ export default function Pillar1() {
           whileInView={{ height: '15vh' }}
           transition={{ duration: 1, delay: 0.6 }}
           viewport={{ once: false }}
-          style={{ width: '4px', backgroundColor: 'var(--color-entity)', margin: '3rem auto 0 auto', borderRadius: '2px' }}
+          style={{ backgroundColor: 'var(--color-entity)', margin: '3rem auto 0 auto' }}
+          className="connection-line"
         />
       </div>
     </section>

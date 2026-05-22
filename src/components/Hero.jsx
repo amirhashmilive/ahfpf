@@ -1,9 +1,8 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <section className="section-100vh">
+    <section id="hero" className="section-100vh">
       <div className="max-w-4xl text-center">
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
@@ -11,7 +10,7 @@ export default function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: false, amount: 0.5 }}
         >
-          <h1 style={{ fontSize: '4rem', marginBottom: '1rem', letterSpacing: '-0.02em' }}>
+          <h1 className="title-hero">
             Five Pillars Framework
           </h1>
         </motion.div>
@@ -22,7 +21,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
           viewport={{ once: false, amount: 0.5 }}
         >
-          <p style={{ fontSize: '1.5rem', color: 'var(--color-text-light)', maxWidth: '800px', margin: '0 auto' }}>
+          <p className="text-subtitle">
             A universal analytical and implementation framework explaining how communication determines whether initiatives become meaningful societal impact.
           </p>
         </motion.div>
